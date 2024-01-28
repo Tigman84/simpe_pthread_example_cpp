@@ -1,18 +1,30 @@
-# Simple C++ Program with Fork and Thread
 
-This repository contains a simple C++ program demonstrating the use of fork() and threads to calculate the sum of numbers concurrently.
+#### Simple Pthreads C++ Example
 
-## Program Description
+This repository contains a simple C++ program demonstrating the use of pthreads (POSIX threads) for multithreading.
 
-The program calculates the sum of numbers in a specified range using both fork() and a thread. It showcases two scenarios:
+### Instructions
 
-1. **Thread Example:** The program uses the `<thread>` library to create a thread that calculates the sum of numbers in a given range concurrently.
+1. Clone the repository:
 
-2. **Fork Example:** The program uses the `fork()` system call to create a child process that also calculates the sum of numbers concurrently with the parent process.
+   ```bash
+   git clone https://github.com/Tigman84/simpe_pthread_example_cpp.git
+   ```
 
-## Compilation and Execution
+2. Compile the program:
 
-To compile the program, use the following command:
+   ```bash
+   g++ -o multithreading_example multithreading_example.cpp -pthread
+   ```
 
-```bash
-g++ main.cpp -o sum_program -std=c++11 -pthread
+3. Run the executable:
+
+   ```bash
+   ./multithreading_example
+   ```
+
+### Description
+
+This C++ program creates two threads using pthreads, each performing a simple task. The `printNumbers` function prints numbers from 1 to 5, and the `printLetters` function prints letters from 'A' to 'E'. The main function creates these threads, and the `pthread_join` function is used to wait for their completion.
+
+Feel free to use and modify this code for your learning or development purposes.
