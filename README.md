@@ -14,7 +14,7 @@ This repository contains a simple C++ program demonstrating the use of pthreads 
 2. Compile the program:
 
    ```bash
-   g++ -o multithreading_example multithreading_example.cpp -pthread
+   g++ -o multithreading_example multithreading_example.cpp -pthread -std=c++11
    ```
 
 3. Run the executable:
